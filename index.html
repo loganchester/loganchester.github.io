@@ -2,62 +2,290 @@
 <html>
   <head>
     <title>Logan Chester</title>
-    <link href="styles/styles.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
   <body>
-    <div class="container">
-      <div class="item menuBox">
-        <div class="menuItem">
-          <a href="index.html" style="text-decoration: none">Home</a>
-          <a href="index.html" class="fa fa-home fa-3x"></a>
-        </div>
-        <div class="menuItem">
-          <a href="OnePageResume.pdf" style="text-decoration: none">Resume</a>
-          <a href="OnePageResume.pdf" class="fa fa-folder-open fa-3x"></a>
-        </div>
-        <div class="menuItem">
-          <a href="worksamples.html" style="text-decoration: none">Work Samples</a>
-          <a href="worksamples.html" class="fa fa-briefcase fa-3x"></a>
-        </div>
-        <div class="menuItem">
-          <a href="travel.html" style="text-decoration: none">Travel</a>
-          <a href="travel.html" class="fa fa-plane fa-3x"></a>
-        </div>
-        <div class="menuItem">
-          <a class ="active" href="contact.html" style="text-decoration: none">Contact</a>
-          <a href="contact.html" class="fa fa-address-book fa-3x"></a>
+    <!-- This is the fixed navigation bar -->
+    <div class="navBar">
+      <a href="#homeSection">Home</a>
+      <a href="#experienceSection">Experience</a>
+      <a href="#educationSection">Education</a>
+      <a href="#travelSection">Travel</a>
+    </div>
+    <!-- This is the initial page -->
+    <div class="section homeSection" id="homeSection">
+      <div class="homeTitle">
+        <h1>LOGAN CHESTER</h1>
+      </div>
+      <h3>
+        Software Engineer. Traveller. Musician. Athlete.
+      </h3>
+      <a class="resumeButton homePageButton" href="files/ONE PAGE RESUME.pdf" target="_blank">Resume</a>
+      <div class="buttonDivider"></div>
+      <a class="contactButton homePageButton" href="#contactSection" target="_self">Contact</a>
+      <div class="homePageDivider"></div>
+    </div>
+    <!-- This is my experience -->
+    <div class="section experienceSection" id="experienceSection">
+      <div class="experienceTitle">
+        <h1>EXPERIENCE</h1>
+      </div>
+      <div class="expPara">
+        <h2>Software Development</h2>
+        <p>
+          I am currently working as a programmer at Ontario Shores Center for
+          Mental Health Sciences. I have used PowerShell and Summit Scripting
+          Toolkit to automate staffing processes while also contributing to
+          some website design projects using HTML5, CSS3, and JavaScript.
+          <br><br>
+          In the past I have used Python and Java to complete school and
+          personal projects. I am in the process of designing a dating app with
+          a friend that requires the use of both Java and React.
+        </p>
+      </div>
+      <div class="expPara">
+        <h2>Management</h2>
+        <p>
+          My first job came in grade 10 at a Victoria McDonald's. By the time I
+          was in grade 12 I was one of the key managers for my branch, handling
+          multiple programs and closing the restaurant nightly. Before leaving
+          the job to travel for a year, I was offered the position of head manager.
+          <br> <br>
+          In the eight months preceding university I worked two jobs simultaneously.
+          One job involved marketing for a start-up house maintenance business.
+          Within a month of being hired to as a marketer for this company I was
+          asked to manage the marketing team.
+        </p>
+      </div>
+      <div class="expPara">
+        <h2>Music</h2>
+        <p>
+          Throughout my time in high school I was involved in the Victoria music
+          scene. I was a member of the Vic High R & B band for five years as the lead guitarist.
+          During my time in the band, we travelled to Ontario, Tennessee, Alabama, Arkansas, and Mississippi
+          to record and perform.
+          <br><br>
+          I was also the performing bass player and studio guitar player for Close the Bombay Doors,
+          a band composed of young musicians from Victoria, BC. We released an EP in 2016
+          and performed across Vancouver Island and in Seattle, Washington.
+        </p>
+      </div>
+      <div class="expPara">
+        <h2>Travel</h2>
+        <p>
+          Between high school and university I took a year off to work and travel.
+          Over the course of 6 months abroad, I visited 22 countries and made some
+          incredible memories while visiting places like Venice, Chernobyl, Yangshuo,
+          and Pyongyang. With each new adventure my friends and I liked to strive
+          out of our comfort zones a little bit more and explore the unknown.
+          I developed an interest in the applications of communism and can say I have been to 
+          Vietnam, China, North Korea, and Cuba which are all either former or
+          current communist states.
+        </p>
+      </div>
+      <div class="expPara experienceDivider"></div>
+    </div>
+    <!-- This is my education -->
+    <div class="section educationSection" id="educationSection">
+      <div class="educationTitle"><h1>EDUCATION</h1></div>
+      <div class="edPara">
+        <h2>High School</h2>
+        <p>
+          I attended Reynolds Secondary School in my hometown of Victoria, BC
+          from September 2012 until June of 2016. I graduated with a 96%
+          average and excelled in Physics, Calculus, History, and English.
+          I was awarded an entrance scholarship to UTSC based on my outstanding
+          grades in addition to multiple provincial Dogwood scholarships (BC).
+          <br> <br>
+          Throughout high school, I took a keen interest in music and I was
+          always involved in multiple musical endevors. I was a part of the
+          Victoria High School Rhythm and Blues Band, a audition and performance
+          based group that travelled across North America for shows and record
+          sessions. I was also a member of Close the Bombay Doors, a indie rock
+          band that released an EP on Apple Music and Spotify.
+        </p>
+      </div>
+      <div class="edPara">
+        <h2>University</h2>
+        <p>
+          After taking a year off to work and travel, I moved to Toronto to
+          attend the University of Toronto Scarborough (UTSC) for a computer science
+          undergraduate degree. I was accepted into the program after achieving
+          excellent grades in 6 core first-year courses ranging from calculus
+          to linear algebra. I also excelled in my breadth courses, including
+          African studies (for which I received an
+          emerging scholars award) and political science.
+          <br> <br>
+          I began my second year immediately following the first with four core
+          courses in the summer semester. I continued to maintain an exemplary
+          GPA and made the Dean's list. I also secured an eight month co-op job
+          at Ontario Shores Centre for Mental Health
+          Sciences. After my work term concludes, I plan to return to UTSC to
+          continue in computer science.
+        </p>
+      </div>
+      <div class="edPara educationDivider"></div>
+    </div>
+    <!-- This is my travel -->
+    <div class="section travelSection" id="travelSection">
+      <div class="travelTitle">
+        <h1>TRAVEL GALLERY</h1>
+      </div>
+      <div class="travelGallery">
+        <div class="gpicture picture1">
+          <a target="_blank" href="images/YangshuoDusk.jpg">
+            <img src="images/YangshuoDusk.jpg" alt="Logan in Yangshuo, Guangxi">
+          </a>
+          <div class="picDesc">Yangshuo, China</div>
         </div>
       </div>
-      <div class="item bodyBox">
-        <div class="aboutItem">
-          <h1> Logan Chester</h1>
-          <h6>
-            I hope you enjoy this interactive snap shot of me.
-            <br> <br>
-            I grew up in Victoria BC, and I am currently in my second year of
-            a computer science undergrad at the University of Toronto Scarborough.
-            <br> <br>
-            Take a look around and discover more about me!
-            <br> <br> <br> <br> <br> <br> <br> <br>
-          </h6>
-          <p>
-            <a href="https://icons8.com">Icon pack by Icons8</a>
-          </p>
+      <div class="travelGallery">
+        <div class="gpicture picture2">
+          <a target="_blank" href="images/YangshuoFrog.jpg">
+            <img src="images/YangshuoFrog.jpg" alt="A frog in Yangshuo, Guangxi">
+          </a>
+          <div class="picDesc">Yangshuo, China</div>
         </div>
-        <div class="contentItem">
-          <div class="explainItem">
-            <p>
-              Travel is one of my many passions! I've been to 25 countries and counting.
-              Check out my travel section for more pictures.
-            </p>
-          </div>
-          <div class="imageItem">
-            <img src="WebProfilePic.jpg" alt="A picture of Logan in Italy">
-          </div>
+      </div>
+      <div class="travelGallery">
+        <div class="gpicture pciture3">
+          <a target="_blank" href="images/YangshuoMud.jpg">
+            <img src="images/YangshuoMud.jpg" alt="A mud cave in Yangshuo, Guangxi">
+          </a>
+          <div class="picDesc">Yangshuo, China</div>
         </div>
+      </div>
+      <div class="travelGallery">
+        <div class="gpicture picture4">
+          <a target="_blank" href="images/Fansipan.m4v">
+            <img src="images/FansipanImage.jpg" alt="A tram ride down from Fansipan, Vietnam in May 2017">
+          </a>
+          <div class="picDesc">Fansipan, Vietnam</div>
+        </div>
+      </div>
+      <div class="travelGallery">
+        <div class="gpicture picture5">
+          <a target="_blank" href="images/NacpanJump.jpg">
+            <img src="images/NacpanJump.jpg" alt="Nacpan Beach, Palawan, Phillipines April 2017">
+          </a>
+          <div class="picDesc">Nacpan, Phillipines</div>
+        </div>
+      </div>
+      <div class="travelGallery">
+        <div class="gpicture picture6">
+          <a target="_blank" href="images/ElNidoDusk.jpg">
+            <img src="images/ElNidoDusk.jpg" alt="El Nido, Palawan, Phillipines April 2017">
+          </a>
+          <div class="picDesc">El Nido, Phillipines</div>
+        </div>
+      </div>
+      <div class="travelGallery">
+        <div class="gpicture pciture7">
+          <a target="_blank" href="images/LoganNicBantayan.jpg">
+            <img src="images/LoganNicBantayan.jpg" alt="Bantayan, Phillipines April 2017">
+          </a>
+          <div class="picDesc">Bantayan, Phillipines</div>
+        </div>
+      </div>
+      <div class="travelGallery">
+        <div class="gpicture picture8">
+          <a target="_blank" href="images/HaLongBay.jpg">
+            <img src="images/HaLongBay.jpg" alt="Halong Bay, Vietnam May 2017">
+          </a>
+          <div class="picDesc">Halong Bay, Vietnam</div>
+        </div>
+      </div>
+      <div class="travelGallery">
+        <div class="gpicture picture9">
+          <a target="_blank" href="images/OrdosBodyBag.jpg">
+            <img src="images/OrdosBodyBag.jpg" alt="Ordos, Inner Mongolia, China June2017">
+          </a>
+          <div class="picDesc">Ordos, China</div>
+        </div>
+      </div>
+      <div class="travelGallery">
+        <div class="gpicture picture10">
+          <a target="_blank" href="images/MajesticCamel.jpg">
+            <img src="images/MajesticCamel.jpg" alt="A majestic camel in Inenr Mongolia, China June 2017">
+          </a>
+          <div class="picDesc">Ordos, China</div>
+        </div>
+      </div>
+      <div class="travelGallery">
+        <div class="gpicture pciture11">
+          <a target="_blank" href="images/Pyongyang.jpg">
+            <img src="images/Pyongyang.jpg" alt="Pyongyang, North Korea, June 2017">
+          </a>
+          <div class="picDesc">Pyongyang, N. Korea</div>
+        </div>
+      </div>
+      <div class="travelGallery">
+        <div class="gpicture picture12">
+          <a target="_blank" href="images/Chongjin.jpg">
+            <img src="images/Chongjin.jpg" alt="Chongjin, North Korea, June 2017">
+          </a>
+          <div class="picDesc">Chongjin, N. Korea</div>
+        </div>
+      </div>
+      <div class="travelGallery">
+        <div class="gpicture picture13">
+          <a target="_blank" href="images/KoreanMonument.jpg">
+            <img src="images/KoreanMonument.jpg" alt="Pyonyang, North Korea, June 2017">
+          </a>
+          <div class="picDesc">Pyongyang, N. Korea</div>
+        </div>
+      </div>
+      <div class="travelGallery">
+        <div class="gpicture picture14">
+          <a target="_blank" href="images/Pripyat.jpg">
+            <img src="images/Pripyat.jpg" alt="Pripyat, Ukraine, November 2016">
+          </a>
+          <div class="picDesc">Pripyat, Ukraine</div>
+        </div>
+      </div>
+      <div class="travelGallery">
+        <div class="gpicture pciture15">
+          <a target="_blank" href="images/Volleyball.jpg">
+            <img src="images/Volleyball.jpg" alt="Volleyball in Chilbo, North Korea, June 2017">
+          </a>
+          <div class="picDesc">Chilbo, N. Korea</div>
+        </div>
+      </div>
+      <div class="travelGallery">
+        <div class="gpicture picture16">
+          <a target="_blank" href="images/Switzerland.jpg">
+            <img src="images/Switzerland.jpg" alt="Grindelwal, Switzerland October 2016">
+          </a>
+          <div class="picDesc">Grindelwald, Switz.</div>
+        </div>
+      </div>
+    </div>
+    <!-- This is my contact info -->
+    <div class="section contactSection" id="contactSection">
+      <div class="contactTitle">
+        <h1>CONNECT</h1>
+      </div>
+      <div class="contactItems">
+        <div class="contactItem contactLinkedIn">
+          <a href="https://www.linkedin.com/in/logan-chester-259807149/" target="_blank" class="fa fa-linkedin fa-3x">Linkedin</a>
+        </div>
+        <div class="contactItem contactFacebook">
+          <a href="https://www.facebook.com/logan.chester.507" target="_blank" class="fa fa-facebook fa-3x">Facebook</a>
+        </div>
+        <div class="contactItem contactInstagram">
+          <a href="https://www.instagram.com/logansemester/?hl=en" target="_blank" class="fa fa-instagram fa-3x">Instagram</a>
+        </div>
+        <div class="contactItem contactEmail">
+          <a href="mailto:logan.chester@mail.utoronto.ca" target="_blank" class="fa fa-envelope fa-3x">Email</a>
+        </div>
+        <div class="contactItem contactWhatsApp">
+          <a href="tel:2508852721" target="_blank" class="fa fa-whatsapp fa-3x">WhatsApp</a>
+        </div>
+        <div class="contactItem contactPhone">
+          <a href="tel:2508852721" target="_blank" class="fa fa-phone fa-3x">Phone</a>
+        </div>
+      </div>
     </div>
   </body>
 </html>
