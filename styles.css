@@ -30,6 +30,7 @@ body {
     top: 2;
     color: white;
     width: 100%;
+    padding: 1%;
   }
   .navBar a {
     color: white;
@@ -227,6 +228,7 @@ body {
     color: white;
     width: 100%;
     text-align: center;
+    padding: 1%;
   }
   .navBar a {
     color: white;
