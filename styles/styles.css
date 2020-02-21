@@ -1,0 +1,419 @@
+/* =Reset
+-------------------------------------------------------------- */
+
+/*
+when migrating from Pat's dev environment to current dev environment
+all instances of /images/ must be replaced with /media/interface/images/
+all instances of .buttonGrey must be replaced with .external
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+    border: 0;
+    font-family: inherit;
+    font-size: 100%;
+    font-style: inherit;
+    font-weight: inherit;
+    margin: 0;
+    outline: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+
+html {
+    font-size: 62.5%; /* Corrects text resizing oddly in IE6/7 when body font-size is set using em units http://clagnut.com/blog/348/#c790 */
+    overflow-y: scroll; /* Keeps page centered in all browsers regardless of content height */
+    -webkit-text-size-adjust: 100%; /* Prevents iOS text size adjust after orientation change, without disabling user zoom */
+    -ms-text-size-adjust:     100%; /* www.456bereastreet.com/archive/201012/controlling_text_size_in_safari_for_ios_without_disabling_user_zoom/ */
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing:    border-box;
+    height: 100%;
+}
+
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+nav,
+section {
+    display: block;
+}
+
+/*all body formatting*/
+body{
+    font-family: Open Sans, sans-serif;
+}
+#homeBody {
+  background: url(../images/index.jpg) center top;
+  background-size: cover;
+  background-attachment: fixed;
+}
+#blogBody {
+  background: url(../images/travel-blog.jpg) center top;
+  background-size: cover;
+  background-attachment: fixed;
+  padding-bottom: 20px;
+}
+#aboutBody {
+  background: url(../images/about.jpeg) center top;
+  background-size: cover;
+  background-attachment: fixed;
+}
+#contactBody {
+  background: url(../images/contact.jpg) center top;
+  background-size: cover;
+  background-attachment: fixed;
+}
+#container{
+    width:100%;
+}
+.blog-container {
+  width: 100%;
+  margin: 10px;
+}
+
+
+/*NAV BAR*/
+.top-nav-background{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 2;
+    height: 50px;
+    width: 100%;
+    background-color: rgba(53,53,45, .95);
+    box-shadow: 3px 4px 5px 0px rgba(0, 0, 0, 0.25);
+    z-index: 2;
+}
+a#my-button{
+    line-height: 50px;
+    font-weight: 600;
+    color: #fff;
+    text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.75);
+    font-size: 13px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 1.5em;
+    display: block;
+    margin-left: 10%;
+}
+a#my-button img {
+    position: relative;
+    top: 1px;
+    margin-right: 10px;
+}
+a#my-button:hover{
+    cursor: pointer;
+}
+
+
+/*TITLES*/
+.pageTitle {
+  color: white;
+  text-align: center;
+  padding-top: 150px;
+}
+.pageTitle h1 {
+  font-weight: bold;
+  font-size: 50px;
+  color: white;
+}
+.pageTitle h2 {
+  font-size: 30px;
+  color: white;
+}
+.blogTitle {
+  color: grey;
+  text-align: center;
+  padding-top: 150px;
+}
+.blogTitle h1 {
+  font-weight: bold;
+  font-size: 50px;
+  color: grey;
+}
+.blogTitle h2 {
+  font-size: 30px;
+  color: grey;
+}
+
+/*
+
+/*MEDIA LINKS*/
+.social-media {
+  display: grid;
+  grid-template-columns: 31% 31% 31%;
+  text-align: center;
+  width: 150px;
+  margin: auto;
+  padding: 40px;
+}
+.media-item a {
+  color: black;
+  text-decoration: none;
+  margin-left: 5px;
+}
+
+/*BLOG INDIVIDUAL CONTENT*/
+.blog-header {
+  padding-top: 50px;
+  font-size: 40px;
+  text-align: center;
+  font-weight: bold;
+  border-radius: 15px;
+  color: white;
+}
+.blog-content {
+  padding: 20px;
+  max-width: 75%;
+  text-align: center;
+  margin: auto;
+}
+.blog-row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+.blog-column {
+  flex: 24%;
+  max-width: 24%;
+  padding: 0 4px;
+}
+.adele-col {
+  flex: 48.5;
+  max-width: 48.5%;
+  padding: 0 4px;
+}
+.blog-column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+  image-orientation: from-image;
+}
+.blog-column video {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+@media screen and (max-width: 800px) {
+  .blog-column {
+    flex: 48.5%;
+    max-width: 48.5%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .blog-column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+/*BLOG HOME CONTENT*/
+.blog-left-col {
+  float: left;
+  width: 49.8%;
+  border-right: 1px white solid;
+  text-align: center;
+}
+.blog-right-col {
+  float: left;
+  width: 49.8%;
+  text-align: center;
+}
+@media screen and (max-width: 850px) {
+  .blog-right-col {
+    width: 100%;
+    padding: 0;
+    text-align: center;
+  }
+  .blog-left-col {
+    width: 100%;
+    padding: 0;
+    text-align: center;
+    border-right: none;
+  }
+}
+.blogCard {
+ padding: 20px;
+ margin: 20px;
+ border-top: 1px white solid;
+}
+.blogCard h1 h4 {
+  color: white;
+  text-align: center;
+}
+.blogCard img {
+  max-height: 350px;
+  width: 100%;
+  border: grey solid 2px;
+  border-radius: 5%;
+}
+
+.aboutContent p {
+  color: white;
+}
+.content{
+    z-index: 1;
+    position: relative;
+    background-color: transparent;
+    margin: 0 auto;
+    /* overflow: auto;*/
+    width: 90%;
+    color: white;
+}
+.content a:link, .content a:visited{
+    color: #2455C3;
+    text-decoration: none;
+}
+.content a:hover{
+    text-decoration: underline;
+}
+.content p, .content ul {
+    font-size: 1.6em;
+}
+.bold{
+    font-weight: 600;
+}
+.content img {
+    margin: 0 auto;
+    display: block;
+}
+.caption{
+    font-style: italic;
+    font-size: 1.2em;
+    text-align: center;
+    display: block;
+}
+
+h1, h2, h3, p, ul{
+    margin-bottom: 25px;
+}
+h1{
+    font-size: 3em;
+}
+h2{
+    font-size: 2em;
+}
+h4{
+    font-size: 1.6rem;
+}
+.content ul{
+    list-style-position: inside;
+}
+
+
+
+/*hide mobile button*/
+a.menu-item{
+    display: none;
+}
+
+/*contact form*/
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/*contact form submit button*/
+input[type=submit] {
+  background-color: grey;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/*contact form submit button*/
+input[type=submit]:hover {
+  background-color: rgba(53,53,45, .95);
+}
+
+/*contact form*/
+.contactContainer {
+  border-radius: 5px;
+  padding-top: 15%;
+}
+
+
+/*Mobile style beginning at 959px*/
+
+@media (min-width: 959px){
+
+    /*top menu links*/
+    .top-nav-background{
+        height: 56px;
+    }
+    div.top-nav-container{
+        overflow: auto;
+        width:960px;
+        text-align: center;
+        margin: 0 auto;
+    }
+    div.content{
+        max-width:960px;
+    }
+    a#my-button{
+        display: none;
+    }
+    div.top-nav-container a.menu-item:first-child{
+        padding-left: 0;
+    }
+    div.top-nav-container a.menu-item:last-child{
+        border-right: 0;
+        padding-right: 0;
+    }
+    a.menu-item:link, a.menu-item:visited{
+
+    border-right: 1px solid;
+    border-color: #434c42;
+    line-height: 56px;
+    color: #fff;
+    text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.75);
+    font-weight: 400;
+    font-size: 13px;
+    text-transform: uppercase;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 1.5em;
+    padding-right: 2em;
+    padding-left: 2em;
+    letter-spacing: .1rem;
+    transition: color 1s ease-in;
+    -webkit-transition: color 1s ease-in;
+    -moz-transition: color 1s ease-in;
+    }
+    a.menu-item:hover{
+        color: grey;
+    }
+    div.top-nav-container a.active {
+        color: grey;
+    }
+
+    #my-button{
+        display: none;
+    }
+}

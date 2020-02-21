@@ -1,0 +1,336 @@
+/* =Reset
+-------------------------------------------------------------- */
+
+/*
+when migrating from Pat's dev environment to current dev environment
+all instances of /images/ must be replaced with /media/interface/images/
+all instances of .buttonGrey must be replaced with .external
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+    border: 0;
+    font-family: inherit;
+    font-size: 100%;
+    font-style: inherit;
+    font-weight: inherit;
+    margin: 0;
+    outline: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+
+html {
+    font-size: 62.5%; /* Corrects text resizing oddly in IE6/7 when body font-size is set using em units http://clagnut.com/blog/348/#c790 */
+    overflow-y: scroll; /* Keeps page centered in all browsers regardless of content height */
+    -webkit-text-size-adjust: 100%; /* Prevents iOS text size adjust after orientation change, without disabling user zoom */
+    -ms-text-size-adjust:     100%; /* www.456bereastreet.com/archive/201012/controlling_text_size_in_safari_for_ios_without_disabling_user_zoom/ */
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing:    border-box;
+    height: 100%;
+}
+
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+nav,
+section {
+    display: block;
+}
+
+/*all body formatting*/
+body{
+    font-family: Open Sans,sans-serif;
+    background:url(../images/HomeBackgroundPhoto4.jpg) center top;
+    background-size: cover;
+}
+body#blogBody {
+  background: url(../images/map.jpg) center top;
+  background-size: cover;
+  padding: 20px;
+  background-attachment: fixed;
+}
+
+/*blog formatting*/
+.blog-header {
+  padding-top: 50px;
+  font-size: 40px;
+  text-align: center;
+  font-weight: bold;
+  border-radius: 15px;
+  color: white;
+}
+.blog-row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.card {
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 15px;
+  margin: auto;
+}
+.card img {
+  border: 2px white solid;
+  height: 240px;
+}
+.card h1 {
+    font-size: 25px;
+    font-weight: bold;
+}
+.card h3 {
+  font-size: 15px;
+}
+.blog-container {
+  width: 75%;
+  margin: auto;
+}
+
+/*slideshow formatting*/
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+  margin-right: 20px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active-dot, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+
+#container{
+    width:100%;
+}
+
+/*navigation bar*/
+.top-nav-background{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 2;
+    height: 50px;
+    width: 100%;
+    background-color: rgba(53,53,45, .95);
+    box-shadow: 3px 4px 5px 0px rgba(0, 0, 0, 0.25);
+    z-index: 2;
+
+}
+a#my-button{
+    line-height: 50px;
+    font-weight: 600;
+    color: #fff;
+    text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.75);
+    font-size: 13px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 1.5em;
+    display: block;
+    margin-left: 10%;
+}
+a#my-button img {
+    position: relative;
+    top: 1px;
+    margin-right: 10px;
+}
+a#my-button:hover{
+    cursor: pointer;
+}
+.content{
+    z-index: 1;
+    position: relative;
+    background-color: transparent;
+    margin: 0 auto;
+   /* overflow: auto;*/
+   width: 85%;
+}
+.content a:link, .content a:visited{
+    color: #2455C3;
+    text-decoration: none;
+}
+.content a:hover{
+    text-decoration: underline;
+}
+.content p, .content ul{
+    font-size: 1.6em;
+}
+.content ul{
+    list-style-position: inside;
+}
+.bold{
+    font-weight: 600;
+}
+.caption{
+    font-style: italic;
+    font-size: 1.2em;
+    text-align: center;
+    display: block;
+}
+
+/*hide mobile button*/
+a.menu-item{
+    display: none;
+}
+
+
+/*Mobile style beginning at 959px*/
+@media (min-width: 959px){
+
+
+
+    /*top menu links*/
+    .top-nav-background{
+        height: 56px;
+    }
+    div.top-nav-container{
+        overflow: auto;
+        width:960px;
+        text-align: center;
+        margin: 0 auto;
+    }
+    div.content{
+        max-width:960px;
+    }
+    a#my-button{
+        display: none;
+    }
+    div.top-nav-container a.menu-item:first-child{
+        padding-left: 0;
+    }
+    div.top-nav-container a.menu-item:last-child{
+        border-right: 0;
+        padding-right: 0;
+    }
+    a.menu-item:link, a.menu-item:visited{
+
+    border-right: 1px solid;
+    border-color: #434c42;
+    line-height: 56px;
+    color: #fff;
+    text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.75);
+    font-weight: 400;
+    font-size: 13px;
+    text-transform: uppercase;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 1.5em;
+    padding-right: 2em;
+    padding-left: 2em;
+    letter-spacing: .1rem;
+    transition: color 1s ease-in;
+    -webkit-transition: color 1s ease-in;
+    -moz-transition: color 1s ease-in;
+    }
+    a.menu-item:hover{
+        color: grey;
+    }
+    div.top-nav-container a.active{
+        color: grey;
+    }
+
+    #my-button{
+        display: none;
+    }
+}
