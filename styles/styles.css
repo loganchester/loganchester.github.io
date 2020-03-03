@@ -81,6 +81,11 @@ body{
   background-size: cover;
   background-attachment: fixed;
 }
+#projectsBody {
+  background: url(../images/projects.jpg) center top;
+  background-size: cover;
+  background-attachment: fixed;
+}
 #container{
     width:100%;
 }
