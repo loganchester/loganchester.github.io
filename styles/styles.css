@@ -86,6 +86,11 @@ body{
   background-size: cover;
   background-attachment: fixed;
 }
+#resumeBody {
+  background: url(../images/contact.jpg) center top;
+  background-size: cover;
+  background-attachment: fixed;
+}
 #container{
     width:100%;
 }
@@ -324,6 +329,18 @@ h4{
     list-style-position: inside;
 }
 
+/*resume*/
+.resume {
+  width: 450px;
+  height: 650px;
+  display: flex;
+  margin: auto;
+}
+
+.resumeContainer {
+  padding-top: 75px;
+}
+
 
 
 /*hide mobile button*/
@@ -421,5 +438,11 @@ input[type=submit]:hover {
 
     #my-button{
         display: none;
+    }
+
+    .resume {
+      display: flex;
+      width: 800px;
+      height: 650px;
     }
 }
