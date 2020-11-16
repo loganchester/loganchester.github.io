@@ -331,7 +331,7 @@ h4{
 
 /*resume*/
 .resume {
-  width: 450px;
+  width: 100%;
   height: 650px;
   display: flex;
   margin: auto;
