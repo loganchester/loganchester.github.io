@@ -16,7 +16,7 @@ dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td {
     border: 0;
-    font-family: inherit;
+    font-family: 'Oswald', sans-serif;
     font-size: 100%;
     font-style: inherit;
     font-weight: inherit;
@@ -43,54 +43,47 @@ html {
 }
 
 
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-main,
-nav,
-section {
-    display: block;
-}
+
 
 /*all body formatting*/
-body{
-    font-family: Open Sans, sans-serif;
-}
 #homeBody {
   background: url(../images/index.jpg) center top;
   background-size: cover;
   background-attachment: fixed;
 }
+#travelBlogBody {
+  background: url(../images/index.jpg) center top;
+  background-size: cover;
+  background-attachment: fixed;
+}
 #blogBody {
-  background: url(../images/travel-blog.jpg) center top;
+  /* background: url(../images/index.jpg) center top; */
+  background-color: #627D98;
   background-size: cover;
   background-attachment: fixed;
   padding-bottom: 20px;
 }
 #aboutBody {
-  background: url(../images/about.jpeg) center top;
+  background: url(../images/index.jpg) center top;
   background-size: cover;
   background-attachment: fixed;
 }
 #contactBody {
-  background: url(../images/contact.jpg) center top;
+  background: url(../images/index.jpg) center top;
   background-size: cover;
   background-attachment: fixed;
 }
 #projectsBody {
-  background: url(../images/projects.jpg) center top;
+  background: url(../images/index.jpg) center top;
   background-size: cover;
   background-attachment: fixed;
 }
 #resumeBody {
-  background: url(../images/contact.jpg) center top;
+  background: url(../images/index.jpg) center top;
   background-size: cover;
   background-attachment: fixed;
 }
+
 #container{
     width:100%;
 }
@@ -98,6 +91,7 @@ body{
   width: 100%;
   margin: 10px;
 }
+
 
 
 /*NAV BAR*/
@@ -108,7 +102,7 @@ body{
     z-index: 2;
     height: 50px;
     width: 100%;
-    background-color: rgba(53,53,45, .95);
+    background-color: #102A43;
     box-shadow: 3px 4px 5px 0px rgba(0, 0, 0, 0.25);
     z-index: 2;
 }
@@ -132,6 +126,9 @@ a#my-button img {
 a#my-button:hover{
     cursor: pointer;
 }
+#my-menu {
+  background-color: #829AB1;
+}
 
 
 /*TITLES*/
@@ -139,6 +136,7 @@ a#my-button:hover{
   color: white;
   text-align: center;
   padding-top: 150px;
+  text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.75);
 }
 .pageTitle h1 {
   font-weight: bold;
@@ -147,6 +145,8 @@ a#my-button:hover{
 }
 .pageTitle h2 {
   font-size: 30px;
+  font-weight: bolder;
+  font-style: italic;
   color: white;
 }
 .blogTitle {
@@ -171,15 +171,17 @@ a#my-button:hover{
   display: grid;
   grid-template-columns: 31% 31% 31%;
   text-align: center;
-  width: 150px;
+  width: 400px;
   margin: auto;
   padding: 40px;
+  text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.75);
 }
 .media-item a {
-  color: black;
   text-decoration: none;
-  margin-left: 5px;
+  margin-left: 25px;
+  font-size: 60px;
 }
+
 
 /*BLOG INDIVIDUAL CONTENT*/
 .blog-header {
@@ -196,6 +198,9 @@ a#my-button:hover{
   text-align: center;
   margin: auto;
 }
+.blog-content h4 {
+  font-size: 25px;
+}
 .blog-row {
   display: flex;
   flex-wrap: wrap;
@@ -206,32 +211,54 @@ a#my-button:hover{
   max-width: 24%;
   padding: 0 4px;
 }
-.adele-col {
-  flex: 48.5;
-  max-width: 48.5%;
-  padding: 0 4px;
-}
 .blog-column img {
   margin-top: 8px;
   vertical-align: middle;
   width: 100%;
+  object-fit: cover;
   image-orientation: from-image;
+}
+.hz {
+  height: 250px;
+}
+.vt {
+  height: 508px;
 }
 .blog-column video {
   margin-top: 8px;
   vertical-align: middle;
   width: 100%;
 }
+@media screen and (max-width: 1200px) {
+  .hz {
+    height: 200px;
+  }
+  .vt {
+    height: 408px;
+  }
+}
 @media screen and (max-width: 800px) {
   .blog-column {
     flex: 48.5%;
     max-width: 48.5%;
+  }
+  .hz {
+    height: 300px;
+  }
+  .vt {
+    height: 608px;
   }
 }
 @media screen and (max-width: 600px) {
   .blog-column {
     flex: 100%;
     max-width: 100%;
+  }
+  .hz {
+    height: 400px;
+  }
+  .vt {
+    height: 808px;
   }
 }
 
@@ -272,13 +299,65 @@ a#my-button:hover{
 .blogCard img {
   max-height: 350px;
   width: 100%;
-  border: grey solid 2px;
-  border-radius: 5%;
+  border: white solid 1px;
+  border-radius: 1%;
+  transition: all .2s ease-in-out;
+}
+.blogCard img:hover {
+  transform: scale(1.1);
 }
 
+.aboutContent {
+  font-size: 14px;
+  font-weight: bolder;
+  padding: 20px;
+  margin: 20px;
+  margin-top: 0px;
+  padding-top: 0px;
+}
 .aboutContent p {
   color: white;
   text-align: center;
+}
+.aboutPic {
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+.aboutPic img {
+  max-height: auto;
+  width: 80%;
+  border: white solid 1px;
+  border-radius: 1%;
+}
+
+.projects-content {
+  margin: 20px;
+  padding: 10px;
+}
+.projects-this-website {
+  background-color: #486581;
+}
+.projects-planit {
+  background-color: #829AB1;
+  overflow: auto;
+}
+.planitPic {
+  margin: 10px;
+}
+.planitPic img {
+  max-height: 450px;
+  width: auto;
+  border: black solid 1px;
+  border-radius: 28px;
+}
+.projects-content h1 {
+  font-size: 30px;
+  font-weight: bolder;
+  padding: 10px;
+}
+.projects-content h4 {
+  font-size: 23px;
+  padding: 10px;
 }
 .content{
     z-index: 1;
@@ -293,8 +372,11 @@ a#my-button:hover{
     color: #2455C3;
     text-decoration: none;
 }
+.content a {
+  transition: all .2s ease-in-out;
+}
 .content a:hover{
-    text-decoration: underline;
+    transform: scale(1.1);
 }
 .content p, .content ul {
     font-size: 1.6em;
@@ -338,10 +420,42 @@ h4{
 }
 
 .resumeContainer {
-  padding-top: 75px;
+  padding-bottom: 20px;
 }
 
-
+.experienceContainer {
+  margin-top: 75px;
+  color: #829AB1;
+  width: 100%;
+  height: auto;
+}
+table {
+  table-layout: fixed;
+  width: 100%;
+  border: 1px solid #102A43;
+  border-collapse: collapse;
+  background-color: white;
+}
+thead {
+  background-color: #102A43;
+}
+tbody tr:nth-child(even) {
+  background-color: #829AB1;
+  color: white;
+}
+th, td {
+  padding: 20px;
+}
+th {
+  letter-spacing: 2px;
+  font-weight: bold;
+  font-size: 30px;
+}
+td {
+  letter-spacing: 1px;
+  font-weight: bolder;
+  font-size: 18px
+}
 
 /*hide mobile button*/
 a.menu-item{
@@ -352,7 +466,7 @@ a.menu-item{
 input[type=text], select, textarea {
   width: 100%;
   padding: 12px;
-  border: 1px solid #ccc;
+  border: 1px solid #102A43;
   border-radius: 4px;
   box-sizing: border-box; /* Make sure that padding and width stays in place */
   margin-top: 6px;
@@ -362,7 +476,7 @@ input[type=text], select, textarea {
 
 /*contact form submit button*/
 input[type=submit] {
-  background-color: grey;
+  background-color: #102A43;
   color: white;
   padding: 12px 20px;
   border: none;
@@ -372,7 +486,7 @@ input[type=submit] {
 
 /*contact form submit button*/
 input[type=submit]:hover {
-  background-color: rgba(53,53,45, .95);
+  background-color: #334E68;
 }
 
 /*contact form*/
@@ -425,15 +539,15 @@ input[type=submit]:hover {
     padding-right: 2em;
     padding-left: 2em;
     letter-spacing: .1rem;
-    transition: color 1s ease-in;
-    -webkit-transition: color 1s ease-in;
-    -moz-transition: color 1s ease-in;
+    transition: color 0.2s ease-in;
+    -webkit-transition: color 0.2s ease-in;
+    -moz-transition: color 0.2s ease-in;
     }
     a.menu-item:hover{
-        color: grey;
+        color: #829AB1;
     }
     div.top-nav-container a.active {
-        color: grey;
+        color: #829AB1;
     }
 
     #my-button{
@@ -442,7 +556,7 @@ input[type=submit]:hover {
 
     .resume {
       display: flex;
-      width: 800px;
+      width: 100%;
       height: 650px;
     }
 }
