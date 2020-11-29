@@ -140,7 +140,7 @@ a#my-button:hover{
 }
 .pageTitle h1 {
   font-weight: bold;
-  font-size: 50px;
+  font-size: 75px;
   color: white;
 }
 .pageTitle h2 {
@@ -329,15 +329,14 @@ a#my-button:hover{
   border: white solid 1px;
   border-radius: 1%;
 }
-
 .projects-content {
-  margin: 20px;
-  padding: 10px;
+  padding: 20px;
 }
-.projects-this-website {
+.projects-kontrol, .projects-ontario-shores, .projects-angular {
   background-color: #486581;
+  overflow: auto;
 }
-.projects-planit {
+.projects-planit, .projects-this-website {
   background-color: #829AB1;
   overflow: auto;
 }
@@ -357,7 +356,7 @@ a#my-button:hover{
 }
 .projects-content h4 {
   font-size: 23px;
-  padding: 10px;
+  padding: 20px;
 }
 .content{
     z-index: 1;
