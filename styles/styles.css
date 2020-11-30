@@ -435,8 +435,13 @@ h4{
   display: flex;
   margin: auto;
 }
+
 .resumeContainer {
   padding-bottom: 20px;
+}
+
+.experienceContainer {
+  color: #829AB1;
 }
 
 table {
