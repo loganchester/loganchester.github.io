@@ -182,10 +182,10 @@ a#my-button:hover{
   font-size: 60px;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
   .social-media {
     display: grid;
-    grid-template-columns: 31% 31% 31%;
+    grid-template-columns: 30% 30% 30%;
     text-align: center;
     width: 250px;
     margin: auto;
@@ -346,6 +346,7 @@ a#my-button:hover{
   border: white solid 1px;
   border-radius: 1%;
 }
+
 .projects-content {
   padding: 20px;
 }
@@ -369,7 +370,7 @@ a#my-button:hover{
 .projects-content h1 {
   font-size: 30px;
   font-weight: bolder;
-  padding: 10px;
+  padding: 20px;
 }
 .projects-content h4 {
   font-size: 23px;
@@ -471,6 +472,21 @@ td {
   letter-spacing: 1px;
   font-weight: bolder;
   font-size: 18px
+}
+@media screen and (max-width: 600px) {
+  th, td {
+    padding: 10px;
+  }
+  th {
+    letter-spacing: 1px;
+    font-weight: bold;
+    font-size: 20px;
+  }
+  td {
+    letter-spacing: 0.5px;
+    font-weight: bolder;
+    font-size: 13px
+  }
 }
 
 /*hide mobile button*/
