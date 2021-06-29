@@ -7,96 +7,139 @@ all instances of /images/ must be replaced with /media/interface/images/
 all instances of .buttonGrey must be replaced with .external
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, font, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td {
-    border: 0;
-    font-family: 'Oswald', sans-serif;
-    font-size: 100%;
-    font-style: inherit;
-    font-weight: inherit;
-    color: black;
-    margin: 0;
-    outline: 0;
-    padding: 0;
-    vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+font,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+  border: 0;
+  font-family: "Oswald", sans-serif;
+  font-size: 100%;
+  font-style: inherit;
+  font-weight: inherit;
+  color: black;
+  margin: 0;
+  outline: 0;
+  padding: 0;
+  vertical-align: baseline;
 }
 
 html {
-    font-size: 62.5%; /* Corrects text resizing oddly in IE6/7 when body font-size is set using em units http://clagnut.com/blog/348/#c790 */
-    overflow-y: scroll; /* Keeps page centered in all browsers regardless of content height */
-    -webkit-text-size-adjust: 100%; /* Prevents iOS text size adjust after orientation change, without disabling user zoom */
-    -ms-text-size-adjust:     100%; /* www.456bereastreet.com/archive/201012/controlling_text_size_in_safari_for_ios_without_disabling_user_zoom/ */
-    box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing:    border-box;
-    height: 100%;
+  font-size: 62.5%; /* Corrects text resizing oddly in IE6/7 when body font-size is set using em units http://clagnut.com/blog/348/#c790 */
+  overflow-y: scroll; /* Keeps page centered in all browsers regardless of content height */
+  -webkit-text-size-adjust: 100%; /* Prevents iOS text size adjust after orientation change, without disabling user zoom */
+  -ms-text-size-adjust: 100%; /* www.456bereastreet.com/archive/201012/controlling_text_size_in_safari_for_ios_without_disabling_user_zoom/ */
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  height: 100%;
 }
 
 :root {
   --darkest-grey: #424242;
   --darker-grey: #616161;
   --dark-grey: #757575;
-  --light-grey: #9E9E9E;
-  --lighter-grey: #BDBDBD;
-  --lightest-grey: #EEEEEE;
+  --light-grey: #9e9e9e;
+  --lighter-grey: #bdbdbd;
+  --lightest-grey: #eeeeee;
 }
 
 *:before,
 *:after {
-    box-sizing: inherit;
+  box-sizing: inherit;
 }
 
-#container{
-    width:100%;
-}
-.blog-container {
+#container {
   width: 100%;
-  margin: 10px;
 }
-
-
 
 /*NAV BAR*/
-.top-nav-background{
-    position: fixed;
-    background-color: white;
-    top: 0px;
-    left: 0px;
-    z-index: 2;
-    height: 50px;
-    width: 100%;
-    z-index: 2;
+.top-nav-background {
+  position: fixed;
+  background-color: white;
+  top: 0px;
+  left: 0px;
+  z-index: 2;
+  height: 50px;
+  width: 100%;
+  z-index: 2;
 }
-a#my-button{
-    line-height: 50px;
-    font-weight: 600;
-    color: black;
-    font-size: 13px;
-    text-transform: uppercase;
-    text-decoration: none;
-    font-size: 1.5em;
-    display: block;
-    margin-left: 10%;
+a#my-button {
+  line-height: 50px;
+  font-weight: 600;
+  color: black;
+  font-size: 13px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 1.5em;
+  display: block;
+  margin-left: 10%;
 }
 a#my-button img {
-    position: relative;
-    top: 1px;
-    margin-right: 10px;
-    filter: brightness(0) saturate(100%) invert(0%) sepia(5%) saturate(7500%) hue-rotate(261deg) brightness(98%) contrast(106%);
+  position: relative;
+  top: 1px;
+  margin-right: 10px;
+  filter: brightness(0) saturate(100%) invert(0%) sepia(5%) saturate(7500%)
+    hue-rotate(261deg) brightness(98%) contrast(106%);
 }
-a#my-button:hover{
-    cursor: pointer;
+a#my-button:hover {
+  cursor: pointer;
 }
 #my-menu {
   background-color: white;
 }
-
 
 /*TITLES*/
 .pageTitle {
@@ -145,7 +188,8 @@ a#my-button:hover{
   text-decoration: none;
   margin-left: 25px;
   font-size: 60px;
-  filter: brightness(0) saturate(100%) invert(0%) sepia(5%) saturate(7500%) hue-rotate(261deg) brightness(98%) contrast(106%);
+  filter: brightness(0) saturate(100%) invert(0%) sepia(5%) saturate(7500%)
+    hue-rotate(261deg) brightness(98%) contrast(106%);
 }
 
 @media screen and (max-width: 600px) {
@@ -153,7 +197,7 @@ a#my-button:hover{
     display: grid;
     grid-template-columns: 30% 30% 30%;
     text-align: center;
-    width: 250px;
+    width: 200px;
     margin: auto;
     padding: 40px;
   }
@@ -163,22 +207,6 @@ a#my-button:hover{
     font-size: 40px;
   }
 }
-
-@media screen and (max-width: 600px) {
-  .social-media {
-    display: grid;
-    grid-template-columns: 30% 30% 30%;
-    text-align: center;
-    width: 250px;
-    padding: 20px;
-  }
-  .media-item a {
-    text-decoration: none;
-    margin-left: 25px;
-    font-size: 40px;
-  }
-}
-
 
 /*BLOG INDIVIDUAL CONTENT*/
 .blog-header {
@@ -287,9 +315,9 @@ a#my-button:hover{
   }
 }
 .blogCard {
- padding: 20px;
- margin: 20px;
- color: black;
+  padding: 20px;
+  margin: 20px;
+  color: black;
 }
 
 .blogCard h1 h4 {
@@ -299,7 +327,7 @@ a#my-button:hover{
 .blogCard img {
   max-height: 350px;
   width: 100%;
-  transition: all .2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 .blogCard img:hover {
   transform: scale(1.1);
@@ -329,13 +357,21 @@ a#my-button:hover{
 .projects-content {
   padding: 20px;
 }
-.projects-kontrol, .projects-ontario-shores, .projects-angular {
+.projects-rosewood,
+.projects-kontrol,
+.projects-ontario-shores,
+.projects-angular {
   background-color: var(--darker-grey);
   overflow: auto;
 }
-.projects-planit, .projects-this-website {
+.projects-sklearn,
+.projects-planit,
+.projects-this-website {
   background-color: var(--light-grey);
   overflow: auto;
+}
+.projects-rosewood a {
+  text-decoration: underline !important;
 }
 .planitPic {
   margin: 10px;
@@ -355,56 +391,68 @@ a#my-button:hover{
   font-size: 23px;
   padding: 20px;
 }
-.content{
-    z-index: 1;
-    position: relative;
-    background-color: transparent;
-    margin: 0 auto;
-    /* overflow: auto;*/
-    width: 90%;
-    color: black;
+.content {
+  z-index: 1;
+  position: relative;
+  background-color: transparent;
+  margin: 0 auto;
+  /* overflow: auto;*/
+  width: 90%;
+  color: black;
 }
-.content a:link, .content a:visited{
-    color: black;
-    text-decoration: none;
+.content a:link,
+.content a:visited {
+  color: black;
+  text-decoration: none;
 }
 .content a {
-  transition: all .2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
-.content a:hover{
-    transform: scale(1.1);
+.content a:hover {
+  transform: scale(1.1);
 }
-.content p, .content ul {
-    font-size: 1.6em;
+.media-item a {
+  transition: all 0.2s ease-in-out;
 }
-.bold{
-    font-weight: 600;
+.media-item a:hover {
+  transform: scale(1.1);
+}
+.content p,
+.content ul {
+  font-size: 1.6em;
+}
+.bold {
+  font-weight: 600;
 }
 .content img {
-    margin: 0 auto;
-    display: block;
+  margin: 0 auto;
+  display: block;
 }
-.caption{
-    font-style: italic;
-    font-size: 1.2em;
-    text-align: center;
-    display: block;
+.caption {
+  font-style: italic;
+  font-size: 1.2em;
+  text-align: center;
+  display: block;
 }
 
-h1, h2, h3, p, ul{
-    margin-bottom: 25px;
+h1,
+h2,
+h3,
+p,
+ul {
+  margin-bottom: 25px;
 }
-h1{
-    font-size: 3em;
+h1 {
+  font-size: 3em;
 }
-h2{
-    font-size: 2em;
+h2 {
+  font-size: 2em;
 }
-h4{
-    font-size: 1.6rem;
+h4 {
+  font-size: 1.6rem;
 }
-.content ul{
-    list-style-position: inside;
+.content ul {
+  list-style-position: inside;
 }
 
 /*RESUME*/
@@ -432,7 +480,7 @@ h4{
 table {
   table-layout: fixed;
   width: 100%;
-  border: 1px solid #102A43;
+  border: 1px solid #102a43;
   border-collapse: collapse;
 }
 thead {
@@ -444,7 +492,8 @@ tbody tr:nth-child(even) {
 tbody tr:nth-child(odd) {
   background-color: var(--light-grey);
 }
-th, td {
+th,
+td {
   padding: 20px;
   color: white;
 }
@@ -456,10 +505,23 @@ th {
 td {
   letter-spacing: 1px;
   font-weight: bolder;
-  font-size: 18px
+  font-size: 18px;
 }
 @media screen and (max-width: 600px) {
-  th, td {
+  .pageTitle h1 {
+    font-weight: bold;
+    font-size: 65px;
+    color: black;
+  }
+  .pageTitle h2 {
+    font-size: 25px;
+    font-weight: bolder;
+    font-style: italic;
+    color: black;
+  }
+
+  th,
+  td {
     padding: 10px;
   }
   th {
@@ -470,21 +532,23 @@ td {
   td {
     letter-spacing: 0.5px;
     font-weight: bolder;
-    font-size: 13px
+    font-size: 13px;
   }
 }
 
 /*hide mobile button*/
-a.menu-item{
-    display: none;
+a.menu-item {
+  display: none;
 }
 
 /*contact form*/
-input[type=text], select, textarea {
+input[type="text"],
+select,
+textarea {
   background-color: var(--lighter-grey);
   width: 100%;
   padding: 12px;
-  border: 1px solid #102A43;
+  border: 1px solid #102a43;
   border-radius: 4px;
   box-sizing: border-box; /* Make sure that padding and width stays in place */
   margin-top: 6px;
@@ -493,7 +557,7 @@ input[type=text], select, textarea {
 }
 
 /*contact form submit button*/
-input[type=submit] {
+input[type="submit"] {
   background-color: black;
   color: white;
   padding: 12px 20px;
@@ -504,45 +568,43 @@ input[type=submit] {
 }
 
 /*contact form submit button*/
-input[type=submit]:hover {
+input[type="submit"]:hover {
   background-color: grey;
 }
 
 /*contact form*/
 .contactContainer {
   border-radius: 5px;
-  padding-top: 15%;
 }
-
 
 /*Mobile style beginning at 959px*/
 
-@media (min-width: 959px){
-
-    /*top menu links*/
-    .top-nav-background{
-        height: 56px;
-    }
-    div.top-nav-container{
-        overflow: auto;
-        width:960px;
-        text-align: center;
-        margin: 0 auto;
-    }
-    div.content{
-        max-width:960px;
-    }
-    a#my-button{
-        display: none;
-    }
-    div.top-nav-container a.menu-item:first-child{
-        padding-left: 0;
-    }
-    div.top-nav-container a.menu-item:last-child{
-        border-right: 0;
-        padding-right: 0;
-    }
-    a.menu-item:link, a.menu-item:visited{
+@media (min-width: 959px) {
+  /*top menu links*/
+  .top-nav-background {
+    height: 56px;
+  }
+  div.top-nav-container {
+    overflow: auto;
+    width: 960px;
+    text-align: center;
+    margin: 0 auto;
+  }
+  div.content {
+    max-width: 960px;
+  }
+  a#my-button {
+    display: none;
+  }
+  div.top-nav-container a.menu-item:first-child {
+    padding-left: 0;
+  }
+  div.top-nav-container a.menu-item:last-child {
+    border-right: 0;
+    padding-right: 0;
+  }
+  a.menu-item:link,
+  a.menu-item:visited {
     line-height: 56px;
     color: black;
     font-weight: bold;
@@ -553,19 +615,19 @@ input[type=submit]:hover {
     font-size: 1.5em;
     padding-right: 2em;
     padding-left: 2em;
-    letter-spacing: .1rem;
+    letter-spacing: 0.1rem;
     transition: color 0.2s ease-in;
     -webkit-transition: color 0.2s ease-in;
     -moz-transition: color 0.2s ease-in;
-    }
-    a.menu-item:hover{
-        color: grey;
-    }
-    div.top-nav-container a.active {
-        color: grey;
-    }
+  }
+  a.menu-item:hover {
+    color: grey;
+  }
+  div.top-nav-container a.active {
+    color: grey;
+  }
 
-    #my-button{
-        display: none;
-    }
+  #my-button {
+    display: none;
+  }
 }
