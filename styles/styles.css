@@ -373,10 +373,10 @@ a#my-button:hover {
 .projects-rosewood a {
   text-decoration: underline !important;
 }
-.planitPic {
+.projectPic {
   margin: 10px;
 }
-.planitPic img {
+.projectPic img {
   max-height: 450px;
   width: auto;
   border: black solid 1px;
@@ -533,6 +533,11 @@ td {
     letter-spacing: 0.5px;
     font-weight: bolder;
     font-size: 13px;
+  }
+
+  .sklearnPic img {
+    height: auto;
+    max-width: 200px;
   }
 }
 
