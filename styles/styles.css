@@ -1,69 +1,4 @@
-/* =Reset
--------------------------------------------------------------- */
-
-/*
-when migrating from Pat's dev environment to current dev environment
-all instances of /images/ must be replaced with /media/interface/images/
-all instances of .buttonGrey must be replaced with .external
-*/
-
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-font,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td {
+body > * {
   border: 0;
   font-family: "Oswald", sans-serif;
   font-size: 100%;
@@ -145,12 +80,13 @@ a#my-button:hover {
 .pageTitle {
   color: black;
   text-align: center;
-  padding-top: 150px;
+  padding-top: 80px;
 }
 .pageTitle h1 {
   font-weight: bold;
   font-size: 75px;
   color: black;
+  margin-top: 0;
 }
 .pageTitle h2 {
   font-size: 30px;
@@ -357,6 +293,11 @@ a#my-button:hover {
 .projects-content {
   padding: 20px;
 }
+
+.projects-content > * {
+  color: white;
+}
+
 .projects-rosewood,
 .projects-kontrol,
 .projects-ontario-shores,
@@ -364,6 +305,7 @@ a#my-button:hover {
   background-color: var(--darker-grey);
   overflow: auto;
 }
+.projects-bitformations,
 .projects-sklearn,
 .projects-planit,
 .projects-this-website {
@@ -483,6 +425,10 @@ table {
   border: 1px solid #102a43;
   border-collapse: collapse;
 }
+table ul {
+  display: flex;
+  gap: 4px;
+}
 thead {
   background-color: black;
 }
@@ -502,12 +448,16 @@ th {
   font-weight: bold;
   font-size: 30px;
 }
-td {
+td,
+td > ul > li {
   letter-spacing: 1px;
   font-weight: bolder;
   font-size: 18px;
 }
 @media screen and (max-width: 600px) {
+  table ul {
+    display: block;
+  }
   .pageTitle h1 {
     font-weight: bold;
     font-size: 65px;
@@ -529,7 +479,8 @@ td {
     font-weight: bold;
     font-size: 20px;
   }
-  td {
+  td,
+  td > ul > li {
     letter-spacing: 0.5px;
     font-weight: bolder;
     font-size: 13px;
@@ -635,4 +586,8 @@ input[type="submit"]:hover {
   #my-button {
     display: none;
   }
+}
+
+.mt-0 {
+  margin-top: 0;
 }
